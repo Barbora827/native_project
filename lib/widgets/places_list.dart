@@ -26,6 +26,12 @@ class PlacesList extends StatelessWidget {
         title: TextWidget(
           text: places[index].title,
           align: TextAlign.start,
+          size: 22,
+        ),
+        subtitle: TextWidget(
+          text: places[index].location.address,
+          size: 13,
+          align: TextAlign.start,
         ),
         onTap: () {
           Navigator.of(context).push(
