@@ -77,6 +77,7 @@ class _LocationInputState extends State<LocationInput> {
     if (lat == null || lng == null) {
       return;
     }
+    _savePlace(lat, lng);
   }
 
   void _selectOnMap() async {
